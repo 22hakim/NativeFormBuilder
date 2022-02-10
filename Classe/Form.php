@@ -84,7 +84,7 @@ class Form
         return $this;
     }
 
-    public function addTextArea(string $name, string $content, array $attributes = []):self
+    public function addTextArea(string $name, string $content ='', array $attributes = []):self
     {
         // opening textarea 
         $this->formCode.= '<textarea name="'.$name.'"';
